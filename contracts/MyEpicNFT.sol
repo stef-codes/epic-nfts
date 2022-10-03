@@ -31,7 +31,7 @@ contract MyEpicNFT is ERC721URIStorage {
 
         // Set NFTs data for Meg
         _setTokenURI(newItemId, "https://jsonkeeper.com/b/6RL5"); 
-        console.log("An NFT w/ ID %s has been minted to %s"), newItemId, msg.sender); 
+        console.log("An NFT w/ ID %s has been minted to %s", newItemId, msg.sender); 
 
         // Increment the counter for when the next NFT is minted 
         _tokenIds.increment(); 
